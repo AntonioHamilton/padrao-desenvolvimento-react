@@ -1,68 +1,58 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# REFERÊNCIA PARA DESENVOLVIMENTO FRONT-END (REACT)
 
-## Available Scripts
+## ➤ Explicações iniciais
 
-In the project directory, you can run:
+### ☯ Dentro das pastas existem arquivos js chamados apagar, pois é necessário ter algo dentro das pastas para que o git as reconheça e suba para qualquer sistema de gerenciamento (github, bitbucket, etc...). Apague-os!
 
-### `yarn start`
+## ➤ Style guide
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### ☯ Airbnb JavaScript Style Guide
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+-   [Github](https://github.com/armoucar/javascript-style-guide 'Clique e acesse agora!')
 
-### `yarn test`
+### ☯ ESLint
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-   [Docs](https://eslint.org/ 'Clique e acesse agora!')
+-   [Medium](https://medium.com/@oieduardorabelo/evitando-erros-com-eslint-91b5a4bb9471 'Clique e acesse agora!')
 
-### `yarn build`
+### ☯ Prettier
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-   [Docs](https://prettier.io/ 'Clique e acesse agora!')
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### ☯ EditorConfig
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-   [Docs](https://editorconfig.org/ 'Clique e acesse agora!')
 
-### `yarn eject`
+### ☯ Style guides Javascript com ESLint, Prettier e EditorConfig
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+-   [Vídeo](https://www.youtube.com/watch?v=TI4v4Y8yRjw 'Clique e acesse agora!')
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ➤ Assets
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### ☯ Dentro da pasta Assets estarão todos os recursos midiáticos responsáveis por dar uma vida a mais à página. Então nela serão colocados (Fotos, vídeos, arquivos de texto, Gifs, etc...).
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### Obs: para uma melhor organização é indicado criar pastas dentro de Assets para cada página respectiva da mídia. Então se a foto está na Home Page, crie uma pasta dentro do assets com esse nome e coloque a foto dentro dela.
 
-## Learn More
+## ➤ Components
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### ☯ Componentes são as partes que formam uma página, darei exemplos de componentes para melhor entendiment: Menus, Seções (Sobre nós, Serviços, Projetos) Formulário de Login, Fórmulário de cadastro e até Footer, podem ser considerados componentes. Logo, dentro da pasta components estão esses componentes, o padrão é criar uma pasta com o nome do componente, SEMPRE COM NOME MAIÚSCULO, e colocar os arquivos index.js e style.js, dentro dessas pastas
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Obs: Os componentes tanto do styled-components quanto das pastas deve sempre ser escrito em maiúsculo, pois o Js diferencia tags html, que estão em letras minúsculas, dos componentes dessa maneira.
 
-### Code Splitting
+## ➤ Pages
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### ☯ Não tem muito segredo, as páginas estão dentro dessa pasta, Home, Página de Login, Página de Cadastro, Blog, etc... São exemplos de páginas.
 
-### Analyzing the Bundle Size
+## ➤ Services
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### ☯ As configurações de serviços estarão concentradas nessa página, então se você estiver usando alguma API, faça as configurações dela aqui, pois isso tira a responsabilidade dos componentes de configurar as API's e facilita as chamadas multiplas da mesma API caso seja necessário.
 
-### Making a Progressive Web App
+## ➤ Styles
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### ☯ Nessa pasta estarão as estilizações globais do seu projeto. Isso significa que estilizações que estão em todos os componentes devem estar nessa pasta. Exemplo: o tipo de letra que você usa em um projeto, a cor de fundo padrão da sua página, cor da fonte do seu texto, etc...
 
-### Advanced Configuration
+#### Obs: algumas estilizações estão prontas. O \* significa que é para todos as tags css, e padding: 0 e margin: 0, pois o navegador vem com uma margem padrão que é desnecessária 99,9% das vezes, logo se precisarmos usar uma margem ou um padding, usaremos diretamente no componente.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## ➤ Routes
 
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### ☯ Aqui estão as rotas dos seus componentes e quais componentes as rotas estão obedecendo.
