@@ -6,9 +6,8 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
     }
     html, body, #root, .App {
-        height: 100%;
-        background-color: #000000;
-        color: white;
-        font-family: 'Montserrat', sans-serif;
+        min-height: 100vh;
+        background-color: #fff;
+        color: black;
     }
 `;
