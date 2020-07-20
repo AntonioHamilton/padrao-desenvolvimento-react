@@ -2,6 +2,10 @@
 
 ## ➤ Explicações iniciais
 
+### Para instalar as dependências que estão no package.json utilize o comando "yarn", ou se estiver usando o npm use "npm install"
+
+### Dependências instaladas: styled-components, axios
+
 ### Dentro das pastas existem arquivos js chamados apagar, pois é necessário ter algo dentro das pastas para que o git as reconheça e suba para qualquer sistema de gerenciamento (github, bitbucket, etc...). Apague-os!
 
 ## ➤ Style guide
